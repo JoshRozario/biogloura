@@ -4,7 +4,6 @@ import  Home  from './Pages/Home';
 import  Products  from './Pages/Products';
 import  About  from './Pages/About';
 import  fof from './Pages/fof';
-import Layout from './Components/Layout'
 import Navbar from './Components/Navbar'
 
 

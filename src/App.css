@@ -23,6 +23,54 @@
   color: #61dafb;
 }
 
+.butn-pink {
+
+  display: inline-block;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 21px;
+  background: #e28787;
+  padding: 11px 20px 10px 20px;
+  text-decoration: none;
+  transition: .5s
+}
+
+.butn-pink:hover {
+  background: #c47575;
+  text-decoration: none;
+  color: #fff;
+}
+
+.butn-green {
+
+  display: inline-block;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 21px;
+  background: rgb(119, 173, 156);
+  padding: 11px 20px 10px 20px;
+  text-decoration: none;
+  transition: 0.5s
+}
+
+.butn-green:hover {
+  background: rgb(89, 129, 116);
+  text-decoration: none;
+  color: #fff;
+}
+
+.bspace{
+  margin-bottom: 3rem ;
+  
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

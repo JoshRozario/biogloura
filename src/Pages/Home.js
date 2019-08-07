@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import '../App.css'
 import img1 from '../img/Citrus.jpg'
 import img2 from '../img/AloeVera.jpg'
 
@@ -7,20 +7,22 @@ import img2 from '../img/AloeVera.jpg'
 
 const first = {
     backgroundImage: `url('${img1}' )`,
-    minHeight: "22rem",
+    minHeight: "24rem",
     backgroundSize: "cover",
 };
 
 
 const second = {
     backgroundImage: `url('${img2}' )`,
-    minHeight: "22rem",
+    minHeight: "23rem",
     backgroundSize: "cover",
 };
 
 const text = {
     padding: "3rem",
 }
+
+
 
 
 export default class Home extends Component {
@@ -50,7 +52,7 @@ export default class Home extends Component {
                 </div>
 
                 <div className="row no-gutters align-items-center justify-content-center bspace ">
-                    <div className="col-lg-6 order-lg-2 text-white showcase-img " style={{backgroundImage: { img1 } }}></div>
+                    <div className="col-lg-6 order-lg-2 text-white showcase-img " style={first}></div>
                     <div className="col-lg-6 order-lg-1 my-auto "  style={text}>
                     <h2>Easy to Use &amp; Customize</h2>
                     <p className="lead mb-0 ofw" >Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>

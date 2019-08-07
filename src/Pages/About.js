@@ -2,8 +2,10 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div>
-            <h1>Hello from About</h1>
+        <div className="container">
+            <div className="row no-gutters align-items-center justify-content-center bspace">
+            <h2>Hello from About</h2>
+            </div>
         </div>
     )
 }

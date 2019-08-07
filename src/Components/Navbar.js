@@ -24,16 +24,16 @@ export default function Navbar(){
                     <div className="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <a className="nav-link pl-0" href="#">Home <span className="sr-only">Home</span></a>
+                                <a className="nav-link pl-0" href="/">Home <span className="sr-only">Home</span></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <a className="nav-link" href="/Products">Products</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="//codeply.com">Codeply</a>
+                                <a className="nav-link" href="//codeply.com">About Us</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <a className="nav-link" href="#">Contact</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Link</a>
