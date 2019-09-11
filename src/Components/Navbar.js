@@ -43,8 +43,8 @@ export default function Navbar(){
                     <a href="/" className="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25"><img src = { logo } style = {{ height: "50px"}}/> BioGloura </a>
                     <div className="navbar-collapse collapse dual-nav w-50 order-2">
                         <ul className="nav navbar-nav ml-auto">
-                            <li className="nav-item"><a className="nav-link" href=""><i className="fa fa-twitter"></i></a></li>
-                            <li className="nav-item"><a className="nav-link" href=""><i className="fa fa-github"></i></a></li>
+                            <li className="nav-item"><a className="nav-link" href=""><i className="fab fa-twitter-square"></i></a></li>
+                            <li className="nav-item"><a className="nav-link" href=""><i className="fab fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
