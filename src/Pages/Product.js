@@ -4,22 +4,37 @@ import {Link} from 'react-router-dom'
 import {ProductConsumer} from '../context'
 
 
+const cardTop = {
+    width: "100%",
+    height: "15vw",
+    objectFit: "cover"
+}
+
 
 export default class Product extends Component {
     render () {
         const {id, title, img, price, inCart} = this.props.product
+        
+        
         return (
             <ProductWrapper className = "col-4 my-3 ">
                 <div className = "card">
-                    <div className = "img-container p-5" onClick ={console.log({img})}>
+                <ProductConsumer>
+                    {(value) => (<div className = "img-container p-3 cardTop" 
+                    onClick ={() => {
+                        value.handleDetail(id);
+                    }}>
                         <Link to="/details">
                              <img src = {img} alt = "product" className = "card-img-top">
                               </img>
                            </Link>
-                        <button className = "cart-btn" disabled = {inCart ? true : false} onClick = {() => {console.log('added to the cart');}}>{inCart ? (<p className = "text-capitalize mb-0" disabled>In Cart</p>): (<i className = "fas fa-cart-plus"></i>)}</button>
-                    </div>
+                        <button className = "cart-btn" disabled = {inCart ? true : false}
+                         onClick = {() => {value.addToCart(id);}}>{inCart ? (<p className = "text-capitalize mb-0" disabled>In Cart</p>): (<i className = "fas fa-cart-plus"></i>)}</button>
+                    </div>)}
+                    
+                </ProductConsumer>
                     {/* card footer */}
-                        <div className = "card-footer dflex justify-content-between">
+                        <div className = "card-footer dflex justify-content-between ">
                             <p className = "align-self-center mb-0">{title}</p>
                             <h5 className = "font-italic mb-0">
                                 <span className="mr-1">$</span>
@@ -54,6 +69,9 @@ const ProductWrapper = styled.div`
         .card-footer{
             background: rgba(247, 247,247)
         }
+        .cart-btn{
+            transform: translate(0, 0);
+        }
     }
     .img-container{
             position: relative;
@@ -82,6 +100,11 @@ const ProductWrapper = styled.div`
     .img-container:hover .cart-btn{
         transform: translate(0, 0);
     }
+
+    .card-footer: hover .cart-btn{
+        transform: translate(0, 0);
+    }
+
     .cart-btn:hover{ 
         color: #000fff;
         cursor: pointer;

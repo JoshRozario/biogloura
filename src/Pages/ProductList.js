@@ -12,7 +12,7 @@ export default class Products extends Component {
         return(
             <React.Fragment>
                 <div className ="container">
-                <Title name = "our" title ="products"/>
+                <Title name = "Our" title ="Products"/>
                     <div className="row">
                             <ProductConsumer>
                                 {(value)=>{

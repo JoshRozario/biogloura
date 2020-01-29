@@ -40,7 +40,8 @@
   background: #e28787;
   padding: 11px 20px 10px 20px;
   text-decoration: none;
-  transition: .5s
+  transition: .5s;
+  cursor: pointer;
 }
 
 .butn-pink:hover {
@@ -61,7 +62,8 @@
   background: rgb(119, 173, 156);
   padding: 11px 20px 10px 20px;
   text-decoration: none;
-  transition: 0.5s
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .butn-green:hover {
@@ -75,6 +77,29 @@
   
 }
 
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: #232528;
+  border-radius: 0 !important;
+  border:0.1rem solid #232528 !important;
+  cursor: pointer;
+}
+
+.btn-black:hover{
+  background: #232528 !important;
+  color:#fff !important;
+}
+
+.count-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: #232528;
+  border-radius: 0 !important;
+  border:0.1rem solid #232528 !important;
+}
 
 @keyframes App-logo-spin {
   from {

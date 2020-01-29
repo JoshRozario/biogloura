@@ -1,6 +1,6 @@
 import product1 from "./img/Citrus.jpg"
 import product2 from "./img/product-2.png"
-import product3 from "./img/Citrus.jpg"
+import product3 from "./img/AloeVera.jpg"
 
 
 
@@ -19,7 +19,7 @@ export const storeProducts = [
     {
       id: 2,
       title: "Samsung S7",
-      img: `${product2}`,
+      img: `${product3}`,
       price: 16,
       company: "SAMSUNG",
       info:
@@ -31,7 +31,7 @@ export const storeProducts = [
     {
       id: 3,
       title: "HTC 10 - Black",
-      img: `${product2}`,
+      img: `${product1}`,
       price: 8,
       company: "htc",
       info:
