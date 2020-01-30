@@ -17,7 +17,7 @@ export default class Product extends Component {
         
         
         return (
-            <ProductWrapper className = "col-4 my-3 ">
+            <ProductWrapper className = "col-lg-3 ml-3 order-lg-2 ">
                 <div className = "card">
                 <ProductConsumer>
                     {(value) => (<div className = "img-container p-3 cardTop" 
@@ -55,9 +55,11 @@ const ProductWrapper = styled.div`
     .card{
         border-color:transparent;
         transition: all 0.25s linear;
+        border: 0.03rem solid rgba(0,0,0,0.2)
+       
     }
     .card-footer{
-        background: transparent;
+        background: transparent ;
         border-top: transparent;
         transition: all 0.25s linear;
     }
@@ -108,6 +110,21 @@ const ProductWrapper = styled.div`
     .cart-btn:hover{ 
         color: #000fff;
         cursor: pointer;
+    }
+
+    @media (max-width:992px){
+    .cart-btn{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.2rem 0.4rem;
+        background: #24a0ed;
+        border:none;
+        color: #fff;
+        font-size: 1.4rem;
+        border-radius: 0.5rem 0 0 0;
+        transform: translate(0, 0);
+        transition: all 0.25s linear;
     }
 
 `

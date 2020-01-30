@@ -18,10 +18,10 @@ export default class Details extends Component {
                             </div>
                             
                             {/* Title */}
-                            <div className = "col-md-5">
+                            <div className = "col-md-5 ml-2">
                                 <h1>{title}</h1>
                                 <h2>Model : {title}</h2>
-                                <h4 className = "text-title text-uppercase text-muted mt-3 mb-2">
+                                <h4 className = "text-title text-uppercase text-muted mb-2">
                                     made by : <span> 
                                         {company}
                                     </span>
@@ -32,8 +32,8 @@ export default class Details extends Component {
                                         {price}
                                     </strong>
                                 </h4>
-                                <p className = "font-weight-bold mt-3 mb-0">
-                                    Product Details:
+                                <p className = "font-weight-bold mt-2 mb-0">
+                                    
                                 </p>
                                 <p className = "text-muted lead">{info}</p>
                             {/* Buttons */}
@@ -43,7 +43,9 @@ export default class Details extends Component {
                                     <ButtonContainer
                                     disabled = {inCart ? true:false}
                                     onClick={()=>{
-                                        value.addToCart(id);
+                                        if(!inCart){
+                                            value.addToCart(id);
+                                        }
                                     }}
                                     >
                                         {inCart ? "inCart" : "Add To Cart"}
