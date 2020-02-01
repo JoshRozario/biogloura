@@ -20,11 +20,7 @@ export default class Details extends Component {
                             {/* Title */}
                             <div className = "col-md-5 ml-2">
                                 <h1>{title}</h1>
-                                <h2>Model : {title}</h2>
                                 <h4 className = "text-title text-uppercase text-muted mb-2">
-                                    made by : <span> 
-                                        {company}
-                                    </span>
                                 </h4>
                                 <h4>
                                     <strong>

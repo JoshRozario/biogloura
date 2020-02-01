@@ -17,8 +17,8 @@ export default class Product extends Component {
         
         
         return (
-            <ProductWrapper className = "col-lg-3 ml-3 order-lg-2 ">
-                <div className = "card">
+            <ProductWrapper className = "col-lg-3  order-lg-2 ">
+                <div className = "card h-100">
                 <ProductConsumer>
                     {(value) => (<div className = "img-container p-3 cardTop" 
                     onClick ={() => {
