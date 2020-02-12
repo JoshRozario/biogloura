@@ -4,7 +4,7 @@ import logo from '../img/logo.png'
 
 const Styles = styled.div`
     @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-    padding-top: 80px
+    padding-top: 77px
 ` ;
 
 const bottom = {
@@ -32,9 +32,9 @@ export default function Navbar(){
                             <li className="nav-item">
                                 <a className="nav-link" href="/about">About Us</a>
                             </li>
-                            <li className="nav-item">
+                           {/* <li className="nav-item">
                                 <a className="nav-link" href="contact">Contact</a>
-                            </li>
+                                </li> */}
 
                         </ul>
                     </div>

@@ -10,7 +10,7 @@ const cardTop = {
     objectFit: "cover"
 }
 
-
+ 
 export default class Product extends Component {
     render () {
         const {id, title, img, price, inCart} = this.props.product

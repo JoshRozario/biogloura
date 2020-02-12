@@ -1,6 +1,7 @@
 {
   "name": "biogloura",
   "version": "0.1.0",
+  "homepage":"http://biogloura.com.au",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.10.2",

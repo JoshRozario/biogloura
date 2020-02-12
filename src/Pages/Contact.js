@@ -12,6 +12,18 @@ const first = {
     backgroundSize: "cover",
 };
 
+const Top = {
+    position: "absolute",
+    bottom: "0",
+    width: "100%",
+    /* Set the fixed height of the footer here */
+    height: "10px",
+    backgroundColor: "rgb(248, 249, 250);",
+    borderTopStyle: "solid",
+    borderTopWidth: "1px",
+    borderTopColor: "rgb(180, 180, 180)"
+}
+
 
 const second = {
     backgroundImage: `url('${img2}' )`,
@@ -20,56 +32,61 @@ const second = {
 };
 
 const text = {
-    padding: "3rem",
+    backgroundColor: "000000",
+}
+
+const headerFirst = {
+    fontSize: "50px",
+}
+
+const header = {
+    paddingTop: "20px",
+    paddingBottom: "40px",
+    backgroundColor: "f5f5f5"
+    
+}
+
+const desc = {
+    fontSize: "17px",
+    
 }
 
 
 
-
-
-
-export default class About extends Component {
-    render() {
+export default function Contact(){
         return (
-            <section className="showcase" >
-                <div className="container" >
-                    <div className=" justify-content-center bspace">
-                    <Title name = "About" title ="us"/>
-                    </div>
-                    
-
-                    <div className="row no-gutters align-items-center justify-content-center bspace " >
-                    <div className="row no-gutters align-items-center justify-content-center bspace">
-                        <div className="col-lg-6 order-lg-1 my-auto showcase-text" style={text} >
-                        <h2>Get into contact with us!</h2>
-                        <p className="lead mb-0 ofw">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!
-                        </p>
-                        <br/>
-                        
-                        </div>
-                        
-                        
-                        <div className="col-lg-6 order-lg-1 my-auto showcase-text" style={text} >
-                        <h2>Fully Responsive Design</h2>
-                        <p className="lead mb-0 ofw">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!
-                        </p>
-                        <br/>
-                        
-                        </div>
-                    </div>
-                    </div>
-
-                    <div className="row no-gutters align-items-center justify-content-center bspace ">
-                        <div className="col-lg-6 order-lg-2 text-white showcase-img " style={first}></div>
-                        <div className="col-lg-6 order-lg-1 my-auto "  style={text} >
-                        <h2>Easy to Use &amp; Customize</h2>
-                        <p className="lead mb-0 ofw" >Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
-                        <br/>
-                        <a href="#" className="butn-pink" >Link Button</a>
+        <React.Fragment>
+            <section className="showcase " >
+                <footer className="footer" style = { Top }>
+                    <div className="row" style = {header}>
+                        <div class="col-md-12 "style = { text }>
+                            <div class="row">
+                                <div class="col-md-6 text-right align-left">
+                                    <dd style = { desc }> 
+                                        For general Enquiries:  
+                                        <a href="mailto:info@biogloura.com.au">
+                                            info@biogloura.com.au
+                                        </a>
+                                        <br/>
+                                        For Administrative Enquiries:  
+                                        <a href="mailto: admin@biogloura.com.au">
+                                            admin@biogloura.com.au
+                                        </a>
+                                    </dd>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd style = {desc}>
+                                        Call Us
+                                        <br/>
+                                        Phone us at : 0432575049
+                                    </dd>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </footer>
             </section>
+         </React.Fragment>
         )
     }
-}
+

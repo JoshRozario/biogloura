@@ -20,11 +20,11 @@ function App() {
         <Route path = "/products" component = { ProductList }/>  
         <Route path = "/about" component = { About }/>  
         <Route path = "/details" component = { Details }/>
-        <Route path = "/contact" component = { Contact }/>
+        {/*<Route path = "/contact" component = { Contact }/>*/}
         <Route path = "/cart" component = {Cart}/>
         <Route component = {fof}/>
       </Switch>  
-      
+      <Contact/>
     </Router> 
     </React.Fragment>
   );
