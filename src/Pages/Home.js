@@ -4,7 +4,7 @@ import img1 from '../img/Citrus.jpg'
 import img2 from '../img/AloeVera.jpg'
 import img3 from '../img/Curcumin.jpg'
 
-import slide1 from '../img/Slide1.png'
+import slide1 from '../img/biogloura_web3.png'
 import slide2 from '../img/Slide2.png'
 
 
@@ -57,11 +57,11 @@ export default class Home extends Component {
                                     <div className="carousel-item active">
                                         <img className="d-block w-100" alt="Carousel Bootstrap First" src={slide1} />
                                     
-                                    </div>
-                                    <div className="carousel-item ">
+                                      </div>
+                                  {/*  <div className="carousel-item ">
                                         <img className="d-block w-100" alt="Carousel Bootstrap Second" src={slide2} />
                                         
-                                    </div>
+                                    </div>*/}
                                     
                                 </div> <a className="carousel-control-prev" href="#carousel-136694" data-slide="prev"><span className="carousel-control-prev-icon"></span> <span className="sr-only">Previous</span></a> <a className="carousel-control-next" href="#carousel-136694" data-slide="next"><span className="carousel-control-next-icon"></span> <span className="sr-only">Next</span></a>
                             </div>
